@@ -26,4 +26,4 @@ let groupedJobsArray = Object.values(groupedJobs);
 
 console.log(JSON.stringify(groupedJobsArray, null, 2));
 
-// STEP 8: COPY THE RESULT ARRAY INTO AN EDITOR AND PROCEED TO "ABC.JS"
+// STEP 8: COPY THE RESULT ARRAY INTO AN EDITOR AND PROCEED TO "people_list_crawler.js"
