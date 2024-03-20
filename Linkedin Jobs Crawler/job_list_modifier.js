@@ -1,4 +1,4 @@
-// STEP 8: PASTE THE ARRAY BELOW AND RUN THE SCRIPT ('node job_list_modifier.js')
+// STEP 7: PASTE THE ARRAY BELOW AND RUN THE SCRIPT ('node job_list_modifier.js')
 let jobListings = [/* Paste the job list array here */];
 
 let groupedJobs = jobListings.reduce((acc, job) => {
@@ -26,4 +26,4 @@ let groupedJobsArray = Object.values(groupedJobs);
 
 console.log(JSON.stringify(groupedJobsArray, null, 2));
 
-// STEP 9: COPY THE RESULT ARRAY INTO AN EDITOR AND PROCEED TO "ABC.JS"
+// STEP 8: COPY THE RESULT ARRAY INTO AN EDITOR AND PROCEED TO "ABC.JS"
