@@ -1,3 +1,9 @@
+/* The below script requires frequent selector checkups, as linkedin keeps updating their layouts */
+
+// STEP 1: SEARCH YOUR DESIRED JOB ON LINKEDIN
+// STEP 2: SCROLL UNTIL THE LAST JOB ON THE LIST, SO THAT ALL JOBS GET RENDERED ON THE BROWSER
+// STEP 3: RUN THE BELOW SCRIPT IN THE BROWSER CONSOLE
+
 let jobs_lists_selector = document.querySelectorAll('.scaffold-layout__list-container > li');
 let jobData = [];
 
@@ -29,3 +35,8 @@ function processJobs(i) {
 }
 
 processJobs(0);
+
+// STEP 4: COPY THE JSON OBJECT FROM THE CONSOLE AND PASTE IT ON ANY EDITOR
+// STEP 5: REPEAT THE SAME FOR ALL THE PAGES OF THE JOB (Note: remove the ending [] brackets of adjacent json objects)
+// STEP 6: COPY THE WHOLE COLLECTED JSON AND DEFINE IN ITS ALLOCATED LOCATION IN "ABC.JS" SCRIPT
+// STEP 7: FOLLOW "ABC.JS SCRIPT" INSTRUCTIONS 
