@@ -350,13 +350,245 @@
             top: 24px;
             right: 24px;
         }
+
+        .message-template{
+            display: none;
+        }
+
+        .template-wrapper{
+            display: flex;
+            gap: 8px;
+        }
+        .template{
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            -webkit-tap-highlight-color: transparent;
+            --background: 0 0% 100%;
+            --foreground: 240 10% 3.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 240 10% 3.9%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 240 10% 3.9%;
+            --primary: 240 5.9% 10%;
+            --primary-foreground: 0 0% 98%;
+            --secondary: 240 4.8% 95.9%;
+            --secondary-foreground: 240 5.9% 10%;
+            --muted: 240 4.8% 95.9%;
+            --muted-foreground: 240 3.8% 46.1%;
+            --accent: 240 4.8% 95.9%;
+            --accent-foreground: 240 5.9% 10%;
+            --destructive: 0 72.22% 50.59%;
+            --destructive-foreground: 0 0% 98%;
+            --border: 240 5.9% 90%;
+            --input: 240 5.9% 90%;
+            --ring: 240 5% 64.9%;
+            --radius: 0.5rem;
+            color-scheme: light;
+            font-synthesis-weight: none;
+            -webkit-font-smoothing: antialiased;
+            --radix-scroll-area-corner-width: 0px;
+            --radix-scroll-area-corner-height: 0px;
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+            border-color: hsl(var(--border));
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgba(59,130,246,.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-weight: inherit;
+            color: inherit;
+            margin: 0;
+            text-transform: none;
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .5rem;
+            border-radius: var(--radius);
+            border-width: 1px;
+            padding: .75rem;
+            text-align: left;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-duration: .15s;
+        }
+        .template:hover{
+            background: #eeeeee;
+        }
+        .template.active{
+            background: #ffcfcf;
+        }
+        .message-template textarea{
+            padding-top: 16px !important;
+            margin-top: 16px !important;
+            width: 400px;
+            min-width: 400px;
+            max-width: 400px;
+            height: 60vh;
+            min-height: 60vh;
+            max-height: 60vh;
+            resize: none;
+
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            -webkit-tap-highlight-color: transparent;
+            --background: 0 0% 100%;
+            --foreground: 240 10% 3.9%;
+            --card: 0 0% 100%;
+            --card-foreground: 240 10% 3.9%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 240 10% 3.9%;
+            --primary: 240 5.9% 10%;
+            --primary-foreground: 0 0% 98%;
+            --secondary: 240 4.8% 95.9%;
+            --secondary-foreground: 240 5.9% 10%;
+            --muted: 240 4.8% 95.9%;
+            --muted-foreground: 240 3.8% 46.1%;
+            --accent: 240 4.8% 95.9%;
+            --accent-foreground: 240 5.9% 10%;
+            --destructive: 0 72.22% 50.59%;
+            --destructive-foreground: 0 0% 98%;
+            --border: 240 5.9% 90%;
+            --input: 240 5.9% 90%;
+            --ring: 240 5% 64.9%;
+            --radius: 0.5rem;
+            color-scheme: light;
+            font-synthesis-weight: none;
+            -webkit-font-smoothing: antialiased;
+            --radix-scroll-area-corner-width: 0px;
+            --radix-scroll-area-corner-height: 0px;
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+            border-color: hsl(var(--border));
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgba(59,130,246,.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-weight: inherit;
+            color: inherit;
+            margin: 0;
+            text-transform: none;
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .5rem;
+            border-radius: var(--radius);
+            border-width: 1px;
+            padding: .75rem;
+            text-align: left;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-duration: .15s;
+        }
     </style>
 </head>
 <body>
     <div class="snackbar"></div>
     <section class="personal_detail">
         <div class="inputbox">
-            <span>Applicant</span>
+            <span>Applicant Name:</span>
             <input type="text" name="applicant" id="applicant"/>
         </div>
         <div class="inputbox">
@@ -364,15 +596,29 @@
             <input type="text" name="profession" id="profession"/>
         </div>
         <div class="inputbox">
-            <span>Year of Experience</span>
+            <span>Year of Experience:</span>
             <input type="text" name="experience" id="experience"/>
         </div>
+        <div class="inputbox">
+            <span>Select data.json file:</span>
+            <input type="file" id="fileInput" accept=".json"/>
+        </div>        
     </section>
 
     <section class="data-wrapper">
-        <div class="col" id="company_col"></div>
-        <div class="col" id="job_col"></div>
+        <div class="col" id="company-col"></div>
+        <div class="col" id="job-col"></div>
         <div class="col" id="people_col"></div>
+        <div class="message-template">
+            <div class="template-wrapper">
+                <div class="template active" id="1">1</div>
+                <div class="template" id="2">2</div>
+                <div class="template" id="3">3</div>
+                <div class="template" id="4">4</div>
+                <div class="template" id="5">5</div>
+            </div>
+            <textarea>`Hello \${employeeName},\n\nI trust you're doing well. I recently discovered a job posting for the \${jobName} position at \${companyName} on LinkedIn, which aligns perfectly with my background as a \${yourProfession} with \${yourExperience} years of expertise. If possible, could you kindly refer me to the hiring manager for this role and perhaps put in a good word about me? Alternatively, if a direct referral isn't feasible, could you share the contact information of the hiring manager so I may reach out personally? I greatly appreciate your support in advance!\n\nWarm regards,\n\${yourName}`</textarea>
+        </div>
     </section>
 
     <script>
@@ -380,14 +626,8 @@
         let selectedJob = null;
         let selectedPerson = null;
 
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                populateCompanies(data);
-            });
-
         function populateCompanies(data) {
-            const companyCol = document.getElementById('company_col');
+            const companyCol = document.getElementById('company-col');
             data.forEach(company => {
                 const companyDiv = document.createElement('div');
                 companyDiv.classList.add('playbox');
@@ -404,7 +644,7 @@
             element.classList.add('active');
 
             selectedCompany = company;
-            const jobCol = document.getElementById('job_col');
+            const jobCol = document.getElementById('job-col');
             const peopleCol = document.getElementById('people_col');
             jobCol.innerHTML = '';
             peopleCol.innerHTML = '';
@@ -442,12 +682,12 @@
 
             personDiv.classList.add('active');
             selectedPerson = person;
-
-            console.log(
-                selectedCompany, selectedJob, selectedPerson
-            )
             
             showSnackbar('Data copied to clipboard')
+            messageTemplate()
+            console.log(
+                selectedCompany.company, selectedJob.title, selectedPerson.name
+            )
         }
 
         function showSnackbar(message) {
@@ -459,6 +699,84 @@
                 snackbar.style.display = 'none';
             }, 3000);
         }
+
+        function messageTemplate(){
+            const companyNameInput = selectedCompany.company;
+            const jobNameInput = selectedJob.title;
+            const employeeNameInput = selectedPerson.name;
+            const yourNameInput = document.getElementById("applicant").value;
+            const yourProfessionInput = document.getElementById("profession").value;
+            const yourExperienceInput = document.getElementById("experience").value;
+
+            const referralTemplates = [
+                `Hello \${employeeName},\n\nI trust you're doing well. I recently discovered a job posting for the \${jobName} position at \${companyName} on LinkedIn, which aligns perfectly with my background as a \${yourProfession} with \${yourExperience} years of expertise. If possible, could you kindly refer me to the hiring manager for this role and perhaps put in a good word about me? Alternatively, if a direct referral isn't feasible, could you share the contact information of the hiring manager so I may reach out personally? I greatly appreciate your support in advance!\n\nWarm regards,\n\${yourName}`,
+                `Hi \${employeeName},\n\nI hope this message finds you in good spirits. I recently came across an exciting opportunity for the \${jobName} position at \${companyName} on LinkedIn. This role appears to be an ideal match for my skills and experiences as a seasoned \${yourProfession} with \${yourExperience} years in the field. If convenient for you, could you assist me by providing a referral to the hiring manager and maybe put in a good word about me? Or, if not, share the hiring manager's contact information so I can initiate contact directly? Your assistance in this matter would be greatly appreciated. Thank you in advance for your time and support.\n\nBest regards,\n\${yourName}`,
+                `Greetings \${employeeName},\n\nI hope all is well with you. I've stumbled upon a posting for the \${jobName} role at \${companyName} on LinkedIn, and it seems like a direct hit with my professional journey as a \${yourProfession}, especially with my \${yourExperience} years of experience. Could I trouble you to introduce me to the hiring manager of this position and possibly mention a few good words about me? If direct introduction is off the table, may I ask for the hiring manager's contact details to reach out on my own? Your support would mean a lot to me. Thank you very much in advance.\n\nSincerely,\n\${yourName}`,
+                `Dear \${employeeName},\n\nI hope you're doing great. Upon exploring LinkedIn, I encountered the \${jobName} role at \${companyName}, which resonates deeply with my expertise as a \${yourProfession} with \${yourExperience} years of dedicated experience. Would it be possible for you to facilitate a referral to the role's hiring manager and also put in a good word for me? Or, if that's not possible, could you kindly provide the contact information of the hiring manager, allowing me to connect directly? I am very thankful for any assistance you can provide. Looking forward to your kind response.\n\nKind regards,\n\${yourName}`,
+                `Hey \${employeeName},\n\nI hope you’re having a great day! I recently came across the \${jobName} position at \${companyName} on LinkedIn and couldn’t help but notice how well it fits with my experience as a \${yourProfession} (\${yourExperience} years and counting!). I was wondering if you might be able to help me out by referring me to the hiring manager and maybe say a few positive things about me? Or, if it’s more convenient, could you share their contact info so I can get in touch directly? I’d really appreciate any help you can provide. Thanks a million in advance!\n\nCheers,\n\${yourName}`,
+                `Hello \${employeeName},\n\nI hope this note finds you well and happy! I’ve just seen the \${jobName} opening at \${companyName} on LinkedIn, and it struck me as a perfect match for my background in \${yourProfession}, especially given my \${yourExperience} years of experience in the field. I’m reaching out to see if you might be willing to refer me to the hiring manager, or if not, perhaps share their contact details so I can touch base directly? If you could also put in a good word about me, that would be incredible. Your support would be incredibly appreciated, and I’m here to return the favor anytime. Many thanks in advance!\n\nWarmly,\n\${yourName}`,
+            ];
+
+            function getRandomTemplate() {
+                const randomIndex = Math.floor(Math.random() * referralTemplates.length);
+                return referralTemplates[randomIndex];
+            }
+
+            function generateReferral() {
+                const companyName = companyNameInput;
+                const jobName = jobNameInput;
+                const employeeName = employeeNameInput;
+                const yourName = yourNameInput;
+                const yourProfession = yourProfessionInput;
+                const yourExperience = yourExperienceInput;
+
+                const selectedTemplate = getRandomTemplate();
+
+                const textarea = document.createElement("textarea");
+                textarea.value = selectedTemplate.replace(/\${companyName}/g, companyName)
+                                                .replace(/\${jobName}/g, jobName)
+                                                .replace(/\${employeeName}/g, employeeName)
+                                                .replace(/\${yourName}/g, yourName)
+                                                .replace(/\${yourProfession}/g, yourProfession)
+                                                .replace(/\${yourExperience}/g, yourExperience);
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+            }
+
+            generateReferral();
+        }
+
+        function saveToLocalStorage() {
+            localStorage.setItem('applicant', document.getElementById('applicant').value);
+            localStorage.setItem('profession', document.getElementById('profession').value);
+            localStorage.setItem('experience', document.getElementById('experience').value);
+
+            if (selectedCompany) {
+                localStorage.setItem('selectedCompany', JSON.stringify(selectedCompany));
+            }
+            if (selectedJob) {
+                localStorage.setItem('selectedJob', JSON.stringify(selectedJob));
+            }
+            if (selectedPerson) {
+                localStorage.setItem('selectedPerson', JSON.stringify(selectedPerson));
+            }
+        }
+
+        function loadFromLocalStorage() {
+            document.getElementById('applicant').value = localStorage.getItem('applicant');
+            document.getElementById('profession').value = localStorage.getItem('profession');
+            document.getElementById('experience').value = localStorage.getItem('experience');
+        }
+
+        // Call loadFromLocalStorage when the page loads
+        document.addEventListener('DOMContentLoaded', loadFromLocalStorage);
+
+        // Add event listeners to save data to localStorage when inputs change
+        document.getElementById('applicant').addEventListener('change', saveToLocalStorage);
+        document.getElementById('profession').addEventListener('change', saveToLocalStorage);
+        document.getElementById('experience').addEventListener('change', saveToLocalStorage);
     </script>
 </body>
 </html>
