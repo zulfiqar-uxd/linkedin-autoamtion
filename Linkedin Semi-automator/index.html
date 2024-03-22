@@ -685,9 +685,7 @@
             
             showSnackbar('Data copied to clipboard')
             messageTemplate()
-            console.log(
-                selectedCompany.company, selectedJob.title, selectedPerson.name
-            )
+            window.open(selectedPerson.profile, '_blank')
         }
 
         function showSnackbar(message) {
@@ -777,6 +775,28 @@
         document.getElementById('applicant').addEventListener('change', saveToLocalStorage);
         document.getElementById('profession').addEventListener('change', saveToLocalStorage);
         document.getElementById('experience').addEventListener('change', saveToLocalStorage);
+
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) {
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const content = e.target.result;
+                try {
+                    const data = JSON.parse(content);
+                    populateCompanies(data);
+                    localStorage.setItem('fileData', content);
+                } catch (error) {
+                    console.error('Error parsing JSON:', error);
+                    showSnackbar('Error parsing JSON file');
+                }
+            };
+            reader.readAsText(file);
+        }
     </script>
 </body>
 </html>
