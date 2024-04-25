@@ -13,8 +13,8 @@ function processJobs(i) {
 
         jobs_lists_selector[i].querySelector('div > div').click();
 
-        let job_company_name = document.querySelector('.jobs-unified-top-card .app-aware-link').innerText;
-        let job_company_link = document.querySelector('.jobs-unified-top-card .app-aware-link').href;
+        let job_company_name = document.querySelector('.job-details-jobs-unified-top-card__primary-description-without-tagline .app-aware-link').innerText;
+        let job_company_link = document.querySelector('.job-details-jobs-unified-top-card__primary-description-without-tagline .app-aware-link').href;
 
         let job_title = document.querySelector('.job-details-jobs-unified-top-card__job-title').innerText;
         let job_link = document.querySelector('.job-details-jobs-unified-top-card__job-title > a').href.split('?')[0];
