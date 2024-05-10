@@ -5,7 +5,7 @@
 // STEP 3: COPY AND RUN THE BELOW SCRIPT IN YOUR BROWSER CONSOLE
 
 let jobs_lists_selector = document.querySelectorAll('.scaffold-layout__list-container > li');
-let jobData = [];
+let jobData = jobData || [];
 
 function processJobs(i) {
     if (i < jobs_lists_selector.length) {
@@ -13,18 +13,22 @@ function processJobs(i) {
 
         jobs_lists_selector[i].querySelector('div > div').click();
 
-        let job_company_name = document.querySelector('.job-details-jobs-unified-top-card__primary-description-without-tagline .app-aware-link').innerText;
-        let job_company_link = document.querySelector('.job-details-jobs-unified-top-card__primary-description-without-tagline .app-aware-link').href;
+        try {
+            let job_company_name = document.querySelector('.job-details-jobs-unified-top-card__company-name .app-aware-link').innerText;
+            let job_company_link = document.querySelector('.job-details-jobs-unified-top-card__company-name .app-aware-link').href;
 
-        let job_title = document.querySelector('.job-details-jobs-unified-top-card__job-title').innerText;
-        let job_link = document.querySelector('.job-details-jobs-unified-top-card__job-title > a').href.split('?')[0];
-        
-        jobData.push({
-            company: job_company_name,
-            profile: job_company_link,
-            title: job_title,
-            link: job_link
-        });
+            let job_title = document.querySelector('.job-details-jobs-unified-top-card__job-title').innerText;
+            let job_link = document.querySelector('.job-details-jobs-unified-top-card__job-title a').href.split('?')[0];
+            
+            jobData.push({
+                company: job_company_name,
+                profile: job_company_link,
+                title: job_title,
+                link: job_link
+            });
+        } catch (error) {
+            console.error(`Error processing job ${i}: ${error}`);
+        }
 
         i++;
         setTimeout(() => processJobs(i), 1000);
